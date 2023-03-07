@@ -39,7 +39,7 @@ public class FluoriteQualityAnalyze implements InitializingBean {
 
     }
 
-    void train() throws Exception {
+    public void train() throws Exception {
         String parentDir = "E:\\LYM\\tmp\\FluoriteQuality";
         String[] datasets = new File(Paths.get(parentDir, "dataset").toString()).list();
         for (String dataset : datasets) {
